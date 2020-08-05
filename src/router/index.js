@@ -48,9 +48,10 @@ export default new VueRouter({
             ]
         },
         {
-            path: '/category/:categoria', 
-            name: 'Categoria',
-            component: Categoria
+            path: '/category/:nombre_categoria', 
+            name: 'categoria',
+            component: Categoria,
+            props: true
         },
         {
             path: '*', 
