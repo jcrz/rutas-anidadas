@@ -1,14 +1,12 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <router-link v-bind:to="{ path: '/' }">Home</router-link>
     <HelloWorld />
     <router-view />     <!-- reemplazamos nuestro componente hardcodeado con  router-view -->
   </div>
 </template>
 
 <script>
-// removemos las referencias a otros componentes no usados en el template.
-
 export default {
   name: 'App',
 
